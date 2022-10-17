@@ -1,0 +1,147 @@
+.dark-bg {
+  background-color: $primary-color;
+}
+.light-bg {
+  background: $bg-light;
+}
+.dark-text {
+  color: $primary-color;
+}
+.light-text {
+  color: $bg;
+}
+.section-padding {
+  padding: 100px 0;
+}
+.disabled {
+  color: $disabled;
+}
+.success-bg {
+  background-color: $bg-success;
+}
+.muted-bg {
+  background-color: $disabled;
+}
+.section {
+  &-header {
+    padding-bottom: 120px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    color: $white;
+    @include mobile {
+      padding: 0 60px 60px 50px;
+    }
+  }
+  &-description {
+    padding-bottom: 0;
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  &-title {
+    &--md {
+      display: block;
+      @include mobile {
+        display: none;
+      }
+    }
+    &--sm {
+      display: none;
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+}
+.dark-text {
+  color: $primary-color;
+}
+.custom-btn {
+  @include button-bg($bg);
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid $bg;
+  border-radius: 0.25rem;
+  padding: 0.875rem 2rem;
+  color: $white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover,
+  &:focus {
+    color: inherit;
+    box-shadow: none;
+    outline: none;
+  }
+}
+.custom-btn {
+  &-lg {
+    padding: 15px 40px;
+    @include tablet {
+    padding: 5px 8px;
+    width: 100px;
+    font-size: xx-small;
+    }
+  }
+  &-md {
+    padding: 15px 36px;
+  }
+  &-sm {
+    padding: 10px 36px;
+    @include tablet {
+      padding: 5px 10px;
+    }
+  }
+}
+.custom-btn-outline {
+  @include button-bg(transparent);
+  color: $white;
+  border: 1px solid $white;
+  &:hover,
+  &:focus {
+    color: inherit;
+    @include button-bg(transparent);
+    border-color: $white;
+  }
+}
+p {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+h5,
+h3,
+h2 {
+  font-weight: 700;
+}
+h6,
+h5 {
+  line-height: 1.5rem;
+}
+h6 {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+h5 {
+  font-size: 1rem;
+}
+h4 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 3.563rem;
+}
+h1 {
+  font-size: 3.625rem;
+  font-weight: 800;
+  line-height: 5rem;
+  margin-bottom: 0;
+}
