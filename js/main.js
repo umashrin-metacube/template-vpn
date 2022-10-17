@@ -18,6 +18,7 @@ $(function(){
     }
   });
 });
+
 $(function(){
   $(".industry-carousel").owlCarousel({
     items: 4,
